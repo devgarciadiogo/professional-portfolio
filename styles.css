@@ -1,0 +1,250 @@
+/* Importando fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Reset básico para evitar diferenças entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo cores e fonte base para todo o site */
+body {
+  background-color: #121212;            /* Fundo escuro elegante */
+  color: #f0f0f0;                       /* Cor clara para contraste */
+  font-family: 'Inter', sans-serif;     /* Fonte moderna */
+  line-height: 1.6;
+}
+
+/* Header fixo no topo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 10px 20px; /* diminui de 20px para 10px no topo e embaixo */
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+/* Ajusta espaçamento interno dos títulos no header */
+header h1 {
+  font-size: 2rem;      /* Se quiser, diminui um pouco também */
+  margin-bottom: -40px;     /* diminui espaço depois do h1 */
+}
+
+header h2 {
+  font-size: 1.5rem;      /* ou 1.2rem, mais discreto */
+  margin-bottom: 5px;     /* menos espaço antes do nav */
+  font-weight: 400;       /* opcional, deixa mais leve */
+}
+
+/* Espaço para que o conteúdo não fique escondido atrás do header */
+main {
+  padding-top: 120px;                   /* Ajuste conforme altura do header */
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Títulos principais */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 40px 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Navegação do header */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: -5px;
+  padding: 0;
+}
+
+nav li {
+  list-style: none; 
+  font-size: 1rem;  /* Garante de novo */
+}
+
+nav a {
+  text-decoration: none;   /* Tira sublinhado */
+  color: #f0f0f0;          /* Cor padrão */
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #7b68ee;          /* Cor no hover */
+}
+
+nav a:visited {
+  color: #f0f0f0;          /* Mantém mesma cor mesmo após clicar */
+}
+
+/* Seções */
+section {
+  margin-bottom: 60px;
+}
+
+/* Deixa os parágrafos das sections mais espaçados */
+#sobre-mim {
+  margin-bottom: 1rem; /* espaço entre os parágrafos */
+  text-align: justify; /* deixa o texto alinhado nas duas margens */
+}
+
+#sobre-mim > h2{
+    margin-bottom: 0rem;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+#skills > p{
+  display: flex;
+  justify-content: center;
+}
+
+/* Lista de skills */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0px;
+  margin-top: 1.2rem;
+  margin-bottom: -1.5rem;
+  justify-content: center;
+}
+
+#skills li {
+  background-color: #1e1e1e;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Container de cards de projetos */
+.projetos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#projetos p {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Estilo dos cards */
+.card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Imagem do card */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Conteúdo interno do card */
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 0.9rem;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+/* Link "saiba mais" */
+.card a {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #7b68ee;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Animação ao passar o mouse */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+#contato p {
+  margin-bottom: 0.5rem; /* espaço depois do texto “Links para redes sociais:” */
+  text-align: center;    /* garante centralização */
+}
+
+#contato a {
+  color: #7b68ee;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+   margin: 0 8px;
+}
+
+#contato a:hover {
+  color: #a18aff; /* tom mais claro no hover */
+}
+
+#contato h2 {
+  display: flex;
+  margin-bottom: 0.3rem;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #1e1e1e;
+}
+
+/* Responsivo: para telas menores */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projetos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reclama Bus - Diogo Garcia</title>
+  <link rel="icon" href="/imagens/favicon.png" type="image/png">
+  <meta name="description" content="Projeto ReclamaBus- Sistema de Feedback do Transporte Público, desenvolvido por Diogo Garcia.">
+</head>
+<body>
+  <header>
+    <h1> ReclamaBus – Sistema de Feedback do Transporte Público</h1>
+    <p>O ReclamaBus é um sistema criado para dar voz aos usuários do transporte público de Niterói, permitindo o registro de reclamações, relatos de ocorrências e opiniões gerais sobre o serviço.</p>
+    <nav>
+      <a href="index.html">← Voltar ao portfólio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Descrição do Projeto</h2>
+      <p>O ReclamaBus é um sistema criado para dar voz aos usuários do transporte público de Niterói, permitindo o registro de reclamações, relatos de ocorrências e opiniões gerais sobre o serviço. O sistema coleta dados como linha, horário e detalhes do relato, mantendo as informações pessoais dos usuários protegidas e invisíveis ao público. Além de centralizar essas informações, o objetivo maior é auxiliar as autoridades responsáveis a identificar e corrigir falhas recorrentes, promovendo melhorias reais no transporte público da cidade.</p>
+
+      <h2>Principais objetivos</h2>
+      <p>Oferecer aos usuários um canal direto para registrar reclamações ou opiniões sobre o transporte.</p>
+      <p>Permitir que o público e os gestores visualizem os problemas mais citados.</p>
+      <p>Contribuir para decisões mais eficazes e investimentos direcionados na melhoria do transporte público.</p>
+
+      <h2>Funcionalidades implementadas</h2>
+      <p>Cadastro com validação de dados (nome, idade, telefone, senha)</p>
+      <p>Login seguro com verificação de e-mail e senha</p>
+      <p>Atualização e exclusão de conta pelo próprio usuário</p>
+      <p>Registro de ocorrência informando linha, categoria, horário e detalhes</p>
+      <p>Visualização de todas as ocorrências cadastradas, permitindo consultas pelos responsáveis</p>
+      <p>Proteção dos dados pessoais: somente as ocorrências ficam públicas, garantindo privacidade</p>
+
+      <h2>Integração com banco de dados</h2>
+      <p>Tabela de usuários: armazena credenciais e informações como idade, PCD, idoso ou funcionário</p>
+      <p>Tabela de ocorrências: armazena relatos detalhados dos usuários</p>
+      <p>Uso de Prepared Statements para prevenir injeção de SQL e garantir segurança nas consultas</p>
+      <p>Métodos CRUD (Create, Read, Update, Delete) para gerenciar dados dos usuários e ocorrências</p>
+
+      <h2>Melhorias previstas</h2>
+      <p>Implementar filtros para buscar ocorrências por linha ou categoria</p>
+      <p>Criar painel administrativo para gestores do transporte visualizarem estatísticas</p>
+      <p>Melhorar a interface para tornar o sistema mais intuitivo ao usuário</p>
+
+      <!-- Se quiser, imagens do projeto aqui - (Depois eu coloco as imagens) --> 
+    </section>
+
+    <section>
+      <h2>Tecnologias Utilizadas</h2>
+      <ul>
+        <li>Linguagem de programação: Java</li>
+        <li>Banco de dados: PostgreSQL</li>
+        <li>Arquitetura: Programação orientada a objetos, com classes e métodos específicos para usuários e ocorrências</li>
+      </ul>
+      <h3>Classes Principais</h3>
+      <ul>
+        <li>Usuarios: gerencia cadastro, login, atualização e exclusão de contas</li>
+        <li>Ocorrencias: gerencia o registro e exibição das reclamações</li>
+        <li>DbContext: gerencia a conexão e operações no banco de dados</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <p>
+        <a href="https://github.com/devgarciadiogo/reclamabus" target="_blank">Ver no GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Diogo Garcia. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

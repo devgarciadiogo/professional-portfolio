@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alimentador Automático para Animais Domésticos - Diogo Garcia</title>
+  <link rel="icon" href="/imagens/favicon.png" type="image/png">
+  <meta name="description" content="Projeto Alimentador Automático - Protótipo Inteligente com Controle via Telegram, desenvolvido por Diogo Garcia.">
+</head>
+<body>
+  <header>
+    <h1>Alimentador Automático para Animais Domésticos – Protótipo Inteligente com Controle via Telegram</h1>
+    <p>O Alimentador Automático é um protótipo funcional desenvolvido para facilitar a rotina de tutores de pets, garantindo a alimentação adequada mesmo à distância.</p>
+    <nav>
+      <a href="index.html">← Voltar ao portfólio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Descrição do Projeto</h2>
+      <p>O Alimentador Automático é um protótipo funcional desenvolvido para facilitar a rotina de tutores de pets, garantindo a alimentação adequada mesmo à distância. Integrado a um bot do Telegram, o sistema permite controle remoto, envio de notificações e ajuste da quantidade de ração servida, buscando promover o bem-estar animal e mais tranquilidade para os donos.
+      
+      O projeto foi pensado para testar não apenas a viabilidade técnica, mas também o impacto real na rotina de tutores e na saúde dos animais, medido por meio de entrevistas, questionários e testes de campo.</p>
+
+      <h2>Principais objetivos</h2>
+      <p>Garantir um sistema confiável para controle remoto da alimentação dos animais.</p>
+      <p>Avaliar como a tecnologia pode impactar positivamente a qualidade de vida dos tutores e pets</p>
+      <p>Capacitar os participantes no desenvolvimento de soluções usando IoT, automação e integração com apps de mensagens.</p>
+
+      <h2>Funcionalidades do bot do Telegram</h2>
+      <p>/alimentar – Libera ração até atingir a gramagem definida.</p>
+      <p>/esperar – Suspende temporariamente a liberação.</p>
+      <p>/timer – Define o tempo até a próxima notificação.</p>
+      <p>/gramagem – Ajusta a quantidade de ração servida por refeição.</p>
+      <p>/emergencia – Liberação automática de ração após 6 horas sem retorno do usuário.</p>
+
+      <h2>Detalhes técnicos e estrutura do projeto:</h2>
+      <p>Estrutura física projetada para armazenar a ração e liberar alimento de forma controlada.</p>
+      <p>Sistema eletrônico central controlado pelo Arduino Uno, responsável por acionar motor, ler sensores e comunicar-se com o Telegram.</p>
+      <p>Pesagem em tempo real para garantir precisão na quantidade servida.</p>
+      <p>Integração via Wi-Fi permitindo configuração e notificações em tempo real pelo Telegram.</p>
+
+      <h2>Desafios encontrados durante o desenvolvimento</h2>
+      <p>Instabilidade na conversão de energia resolvida com capacitores.</p>
+      <p>Problemas de soldagem que prejudicaram a leitura da célula de carga.</p>
+      <p>Fonte de energia insuficiente, que exigiria fonte extra dedicada ao motor (não implementada por falta de tempo).</p>
+      <p>Necessidade de novos componentes adquiridos ao longo do desenvolvimento, como conversor de nível lógico e adaptador USB para o módulo Wi-Fi.</p>
+
+      <h2>Impacto e evolução:</h2>
+      <p>O projeto serviu como aprendizado prático sobre IoT, automação residencial, controle remoto via bots e integração entre hardware e software. Também mostrou, na prática, como dificuldades técnicas, tempo e recursos limitados impactam o desenvolvimento de protótipos, incentivando soluções criativas e ajustes contínuos.</p>
+
+      <!-- Se quiser, imagens do projeto aqui - (Depois eu coloco as imagens) --> 
+    </section>
+
+    <section>
+      <h2>Tecnologias Utilizadas</h2>
+      <ul>
+        <li>Plataforma central: Arduino Uno</li>
+        <li>Conexão com internet: Módulo Wi-Fi ESP8266 ESP-01</li>
+        <li>Controle de liberação de ração: Micro Servo 9g SG90</li>
+        <li>Pesagem precisa: Célula de carga de 5kg integrada ao módulo HX711</li>
+        <li>Regulagem de tensão: AMS1117 3.3V 1A</li>
+        <li>Bot do Telegram: criado no BotFather para interação em tempo real</li>
+        <li>Linguagem: Scripts em C/C++ para Arduino, com lógica de controle e integração com APIs do Telegram</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Diogo Garcia. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

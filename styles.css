@@ -89,6 +89,7 @@ footer {
   margin-top: 30px;
 }
 
+
 /* 5) Componentes */
 nav ul {
   display: flex;
@@ -148,16 +149,20 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* centraliza verticalmente */
   padding: 12px;
   border-radius: 10px;
-  width: 90px;
+  width: 100px; /* um pouco mais largo */
+  min-height: 100px; /* altura mínima para equilibrar */
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+  cursor: pointer; /* reforça interatividade */
 }
 
 .skills-list li:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  filter: brightness(1.2);
 }
 
 .skills-list img {
@@ -198,6 +203,7 @@ nav a {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  filter: brightness(1.1);
 }
 
 .card img {
@@ -338,6 +344,15 @@ nav a:focus {
   body {
     font-size: 0.95rem;
   }
+
+  .skills-list {
+    gap: 10px;
+  }
+
+  .skills-list li {
+    width: 80px;
+    min-height: 90px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -356,5 +371,15 @@ nav a:focus {
   .sobre-foto img {
     width: 180px;
     height: 180px;
+  }
+
+  .skills-list li {
+    width: 70px;
+    min-height: 80px;
+  }
+
+  .skills-list img {
+    width: 30px;
+    height: 30px;
   }
 }

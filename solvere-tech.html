@@ -6,9 +6,10 @@
   <title>Solvere Tech - Diogo Garcia</title>
   <link rel="icon" href="/imagens/favicon.png" type="image/png">
   <meta name="description" content="Projeto Solvere Tech - Plataforma de delivery personalizada por assinatura, desenvolvido por Diogo Garcia.">
+  <meta name="author" content="Diogo Garcia">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="projeto-solvere">
   <header>
     <h1>Solvere Tech – Sistema de Delivery Personalizado por Assinatura</h1>
     <nav>
@@ -17,41 +18,61 @@
   </header>
 
   <main>
-    <section>
+    <section id="descricao">
       <h2>Descrição do Projeto</h2>
-      <p>O Solvere Tech é um aplicativo de delivery desenvolvido para que restaurantes, bares e lanchonetes possam operar suas próprias plataformas de pedidos online, de forma personalizada e independente, por meio de um modelo de assinatura. Cada estabelecimento pode contratar o serviço, customizar o nome do app conforme sua marca, cadastrar seus próprios produtos e gerenciar todo o processo de pagamento pelo aplicativo.
-      
-      Além de permitir o cadastro e a personalização do cardápio, o sistema coleta feedbacks de clientes em relação aos pedidos realizados. Esses comentários são usados para identificar pontos de melhoria e potencializar os aspectos mais elogiados, ajudando o dono do estabelecimento a evoluir continuamente o serviço.</p>
-
-      <h2>Principais objetivos</h2>
-      <p>Permitir que cada restaurante tenha seu próprio app de delivery personalizado.</p>
-      <p>Integrar pagamentos diretamente pelo aplicativo (dinheiro, cartão ou pix).</p>
-      <p>Coletar feedbacks dos clientes para que os donos possam melhorar o atendimento.</p>
-      <p>Garantir que os empreendedores tenham autonomia para cadastrar produtos e personalizar o cardápio</p>
-
-      <h2>Funcionalidades Implementadas</h2>
-      <p>Tela de Home: login ou criação de conta para novos usuários.</p>
-      <p>Tela de Cadastro: novos usuários informam nome, telefone, e-mail e senha.</p>
-      <p>Tela de Cardápio: visualização dos produtos, adição ao carrinho, informações do restaurante e acesso ao perfil.</p>
-      <p>Tela de Pagamento: seleção de forma de pagamento e exibição de QR Code para pagamentos via pix.</p>
-      <p>Cart Context: gerenciamento do carrinho com métodos para adicionar, listar, atualizar e excluir produtos.</p>
-
-      <h2>Integração com banco de dados</h2>
-      <p>Inserção de novos usuários (INSERT)</p>
-      <p>Consulta de dados de clientes (SELECT)</p>
-      <p>Atualização dos dados cadastrados (UPDATE)</p>
-      <p>Exclusão de registros (DELETE)</p>
-      <p>Tratamento de exceções com feedback ao usuário usando blocos try-catch</p>
-
-      <h2>Melhorias previstas</h2>
-      <p>Permitir que os donos editem diretamente os itens disponíveis para venda</p>
-      <p>Implementar histórico de pedidos</p>
-      <p>Adicionar práticas de segurança, como autenticação de usuários e prevenção de SQL Injection</p>
-
-      <!-- Se quiser, imagens do projeto aqui - (Depois eu coloco as imagens) --> 
+      <p>O Solvere Tech é um aplicativo de delivery desenvolvido para que restaurantes, bares e lanchonetes possam operar suas próprias plataformas de pedidos online, de forma personalizada e independente, por meio de um modelo de assinatura. Cada estabelecimento pode contratar o serviço, customizar o nome do app conforme sua marca, cadastrar seus próprios produtos e gerenciar todo o processo de pagamento pelo aplicativo.</p>
+      <p>Além de permitir o cadastro e a personalização do cardápio, o sistema coleta feedbacks de clientes em relação aos pedidos realizados. Esses comentários são usados para identificar pontos de melhoria e potencializar os aspectos mais elogiados, ajudando o dono do estabelecimento a evoluir continuamente o serviço.</p>
     </section>
 
-    <section>
+    <section id="objetivos">
+      <h2>Principais Objetivos</h2>
+      <ul>
+        <li>Permitir que cada restaurante tenha seu próprio app de delivery personalizado.</li>
+        <li>Integrar pagamentos diretamente pelo aplicativo (dinheiro, cartão ou pix).</li>
+        <li>Coletar feedbacks dos clientes para que os donos possam melhorar o atendimento.</li>
+        <li>Garantir que os empreendedores tenham autonomia para cadastrar produtos e personalizar o cardápio.</li>
+      </ul>
+    </section>
+
+    <section id="funcionalidades">
+      <h2>Funcionalidades Implementadas</h2>
+      <ul>
+        <li>Tela de Home: login ou criação de conta para novos usuários.</li>
+        <li>Tela de Cadastro: novos usuários informam nome, telefone, e-mail e senha.</li>
+        <li>Tela de Cardápio: visualização dos produtos, adição ao carrinho, informações do restaurante e acesso ao perfil.</li>
+        <li>Tela de Pagamento: seleção de forma de pagamento e exibição de QR Code para pagamentos via pix.</li>
+        <li>Cart Context: gerenciamento do carrinho com métodos para adicionar, listar, atualizar e excluir produtos.</li>
+      </ul>
+    </section>
+
+    <section id="banco-de-dados">
+      <h2>Integração com Banco de Dados</h2>
+      <ul>
+        <li>Inserção de novos usuários (INSERT)</li>
+        <li>Consulta de dados de clientes (SELECT)</li>
+        <li>Atualização dos dados cadastrados (UPDATE)</li>
+        <li>Exclusão de registros (DELETE)</li>
+        <li>Tratamento de exceções com feedback ao usuário usando blocos try-catch</li>
+      </ul>
+    </section>
+
+    <section id="melhorias-previstas">
+      <h2>Melhorias Previstas</h2>
+      <ul>
+        <li>Permitir que os donos editem diretamente os itens disponíveis para venda</li>
+        <li>Implementar histórico de pedidos</li>
+        <li>Adicionar práticas de segurança, como autenticação de usuários e prevenção de SQL Injection</li>
+      </ul>
+    </section>
+
+    <section id="imagens">
+      <h2>Imagens do Projeto</h2>
+      <p>Para visualizar todas as telas detalhadas do aplicativo, 
+        <a href="https://www.notion.so/FOTOS-DO-PROJETO-SOLVERE-TECH-23f6d2545680808893e8f66efa561626?source=copy_link" target="_blank" rel="noopener noreferrer">clique aqui e visualize no Notion</a>.
+      </p>
+    </section>
+
+    <section id="tecnologias">
       <h2>Tecnologias Utilizadas</h2>
       <ul>
         <li>Linguagem de programação: JavaScript</li>
@@ -61,10 +82,10 @@
       </ul>
     </section>
 
-    <section>
+    <section id="links">
       <h2>Links</h2>
       <p>
-        <a href="https://github.com/devgarciadiogo/solvere-tech" target="_blank">Ver no GitHub</a>
+        <a href="https://github.com/devgarciadiogo/solvere-tech" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
       </p>
     </section>
   </main>

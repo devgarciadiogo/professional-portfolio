@@ -5,50 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reclama Bus - Diogo Garcia</title>
   <link rel="icon" href="/imagens/favicon.png" type="image/png">
-  <meta name="description" content="Projeto ReclamaBus- Sistema de Feedback do Transporte Público, desenvolvido por Diogo Garcia.">
+  <meta name="description" content="Projeto ReclamaBus - Sistema de Feedback do Transporte Público, desenvolvido por Diogo Garcia.">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<link rel="stylesheet" href="styles.css">
-<body>
+<body class="projeto-reclamabus">
   <header>
-    <h1> ReclamaBus – Sistema de Feedback do Transporte Público</h1>
+    <h1>ReclamaBus – Sistema de Feedback do Transporte Público</h1>
     <nav>
       <a href="index.html">← Voltar ao portfólio</a>
     </nav>
   </header>
 
   <main>
-    <section>
+    <section id="descricao">
       <h2>Descrição do Projeto</h2>
       <p>O ReclamaBus é um sistema criado para dar voz aos usuários do transporte público de Niterói, permitindo o registro de reclamações, relatos de ocorrências e opiniões gerais sobre o serviço. O sistema coleta dados como linha, horário e detalhes do relato, mantendo as informações pessoais dos usuários protegidas e invisíveis ao público. Além de centralizar essas informações, o objetivo maior é auxiliar as autoridades responsáveis a identificar e corrigir falhas recorrentes, promovendo melhorias reais no transporte público da cidade.</p>
-
-      <h2>Principais objetivos</h2>
-      <p>Oferecer aos usuários um canal direto para registrar reclamações ou opiniões sobre o transporte.</p>
-      <p>Permitir que o público e os gestores visualizem os problemas mais citados.</p>
-      <p>Contribuir para decisões mais eficazes e investimentos direcionados na melhoria do transporte público.</p>
-
-      <h2>Funcionalidades implementadas</h2>
-      <p>Cadastro com validação de dados (nome, idade, telefone, senha)</p>
-      <p>Login seguro com verificação de e-mail e senha</p>
-      <p>Atualização e exclusão de conta pelo próprio usuário</p>
-      <p>Registro de ocorrência informando linha, categoria, horário e detalhes</p>
-      <p>Visualização de todas as ocorrências cadastradas, permitindo consultas pelos responsáveis</p>
-      <p>Proteção dos dados pessoais: somente as ocorrências ficam públicas, garantindo privacidade</p>
-
-      <h2>Integração com banco de dados</h2>
-      <p>Tabela de usuários: armazena credenciais e informações como idade, PCD, idoso ou funcionário</p>
-      <p>Tabela de ocorrências: armazena relatos detalhados dos usuários</p>
-      <p>Uso de Prepared Statements para prevenir injeção de SQL e garantir segurança nas consultas</p>
-      <p>Métodos CRUD (Create, Read, Update, Delete) para gerenciar dados dos usuários e ocorrências</p>
-
-      <h2>Melhorias previstas</h2>
-      <p>Implementar filtros para buscar ocorrências por linha ou categoria</p>
-      <p>Criar painel administrativo para gestores do transporte visualizarem estatísticas</p>
-      <p>Melhorar a interface para tornar o sistema mais intuitivo ao usuário</p>
-
-      <!-- Se quiser, imagens do projeto aqui - (Depois eu coloco as imagens) --> 
     </section>
 
-    <section>
+    <section id="objetivos">
+      <h2>Principais objetivos</h2>
+      <ul>
+        <li>Oferecer aos usuários um canal direto para registrar reclamações ou opiniões sobre o transporte.</li>
+        <li>Permitir que o público e os gestores visualizem os problemas mais citados.</li>
+        <li>Contribuir para decisões mais eficazes e investimentos direcionados na melhoria do transporte público.</li>
+      </ul>
+    </section>
+
+    <section id="funcionalidades">
+      <h2>Funcionalidades implementadas</h2>
+      <ul>
+        <li>Cadastro com validação de dados (nome, idade, telefone, senha)</li>
+        <li>Login seguro com verificação de e-mail e senha</li>
+        <li>Atualização e exclusão de conta pelo próprio usuário</li>
+        <li>Registro de ocorrência informando linha, categoria, horário e detalhes</li>
+        <li>Visualização de todas as ocorrências cadastradas, permitindo consultas pelos responsáveis</li>
+        <li>Proteção dos dados pessoais: somente as ocorrências ficam públicas, garantindo privacidade</li>
+      </ul>
+    </section>
+
+    <section id="banco">
+      <h2>Integração com banco de dados</h2>
+      <ul>
+        <li>Tabela de usuários: armazena credenciais e informações como idade, PCD, idoso ou funcionário</li>
+        <li>Tabela de ocorrências: armazena relatos detalhados dos usuários</li>
+        <li>Uso de Prepared Statements para prevenir injeção de SQL e garantir segurança nas consultas</li>
+        <li>Métodos CRUD (Create, Read, Update, Delete) para gerenciar dados dos usuários e ocorrências</li>
+      </ul>
+    </section>
+
+    <section id="melhorias">
+      <h2>Melhorias previstas</h2>
+      <ul>
+        <li>Implementar filtros para buscar ocorrências por linha ou categoria</li>
+        <li>Criar painel administrativo para gestores do transporte visualizarem estatísticas</li>
+        <li>Melhorar a interface para tornar o sistema mais intuitivo ao usuário</li>
+      </ul>
+    </section>
+
+    <section id="tecnologias">
       <h2>Tecnologias Utilizadas</h2>
       <ul>
         <li>Linguagem de programação: Java</li>
@@ -63,7 +77,7 @@
       </ul>
     </section>
 
-    <section >
+    <section id="links">
       <h2>Links</h2>
       <p>
         <a href="https://github.com/devgarciadiogo/reclamabus" target="_blank">Ver no GitHub</a>

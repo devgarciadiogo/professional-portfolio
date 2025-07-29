@@ -258,16 +258,21 @@ nav a {
   list-style-type: disc;
 }
 
-.projeto-solvere #imagens a {
+.botao-notion a {
   display: inline-block;
+  padding: 6px 12px;       /* menor que um botão grande */
   background-color: var(--cor-hover);
   color: #fff;
-  padding: 10px 15px;
-  border-radius: 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s;
-  width: 100%x;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-notion a:hover {
+  background-color: var(--cor-hover-light);
+  transform: translateY(-2px);
 }
 
 .projeto-solvere #imagens a:hover {
@@ -281,6 +286,121 @@ nav a {
   color: var(--cor-hover);
 
 }
+
+.projeto-solvere #links a {
+  display: inline-block;
+  background-color: var(--cor-hover);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.projeto-solvere #links a:hover {
+  background-color: var(--cor-hover-light);
+}
+
+/* ReclamaBus – estilos específicos, sem afetar outras páginas */
+.projeto-reclamabus section {
+  background-color: var(--cor-card);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.projeto-reclamabus section h2 {
+  color: var(--cor-hover);
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--cor-hover);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.projeto-reclamabus section ul {
+  padding-left: 20px;
+}
+
+.projeto-reclamabus section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+
+.projeto-reclamabus header h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 10px 0;
+  color: var(--cor-hover);;
+}
+
+.projeto-reclamabus #links a {
+  display: inline-block;
+  background-color: var(--cor-hover);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.projeto-reclamabus #links a:hover {
+  background-color: var(--cor-hover-light);
+}
+
+/*Alimentador Automatico */
+
+.projeto-alimentador section {
+  background-color: var(--cor-card);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.projeto-alimentador section h2 {
+  color: var(--cor-hover);
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--cor-hover);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.projeto-alimentador section ul {
+  padding-left: 20px;
+}
+
+.projeto-alimentador section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+
+.projeto-alimentador header h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 10px 0;
+  color: var(--cor-hover);;
+}
+
+.projeto-alimentador #links a {
+  display: inline-block;
+  background-color: var(--cor-hover);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.projeto-alimentador #links a:hover {
+  background-color: var(--cor-hover-light);
+}
+
 
 /* Contato */
 #contato p {

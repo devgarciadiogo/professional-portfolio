@@ -135,19 +135,41 @@ nav a {
   text-align: center;
 }
 
-#skills ul {
+.skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
-  margin-top: 1.2rem;
+  gap: 15px;
+  margin-top: 1.5rem;
 }
 
-#skills li {
+.skills-list li {
   background-color: var(--cor-card);
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  width: 90px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.skills-list img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 6px;
+}
+
+.skills-list span {
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: 700;
 }
 
 /* Projetos */
